@@ -1,0 +1,7 @@
+Conexión: psql --username=freecodecamp --dbname=postgres
+
+Variables para consulta de BD: PSQL="psql --username=freecodecamp --dbname=<database_name> -t --no-align -c"
+
+Backup: pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
+
+Restaurar: psql -U postgres < number_guess.sql
